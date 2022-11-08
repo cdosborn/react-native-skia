@@ -11,4 +11,4 @@ const imgFactory = Skia.Image.MakeImageFromEncoded.bind(Skia.Image);
 export const useImage = (
   source: DataSourceParam,
   onError?: (err: Error) => void
-) => useRawData(source, imgFactory, onError);
+) => useRawData(source, imgFactory, onError, [source]);
